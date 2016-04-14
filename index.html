@@ -17,7 +17,7 @@
           <th>Price</th>
         </thead>
         <tbody>
-          <tr ng-repeat="request in requests">
+          <tr ng-repeat="request in requests" ng-cloak>
             <td>{{request.completed_at | date:'short'}}</td>
             <td>{{request.id}}</td>
             <td>{{request.price / 100 | currency}}</td>
